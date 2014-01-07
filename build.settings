@@ -1,0 +1,23 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	
+	orientation = {
+		default = "portrait",
+		supported = { "portrait", "portraitUpsideDown", }
+	},
+		
+	plugins = {
+			["CoronaProvider.ads.admob"] =
+			{
+			publisherId = "com.coronalabs",
+			},
+	},
+
+    androidPermissions = {
+            "android.permission.INTERNET",
+            "android.permission.READ_PHONE_STATE",
+            "android.permission.ACCESS_NETWORK_STATE",
+    },
+}
